@@ -1,12 +1,8 @@
 .page {
   box-sizing: border-box;
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
   min-height: 600px;
   max-height: 756px;
@@ -17,7 +13,6 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -60,7 +55,6 @@
   z-index: 2;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
@@ -84,6 +78,15 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.logo_place_footer {
+  height: 35px;
+  background-image: url(../images/logo_place_footer.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 5;
 }
 
 .description {
@@ -279,4 +282,65 @@
   width: 877px;
   height: 877px;
   z-index: 1;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  min-height: 350px;
+  background-color: #1f1f1f;
+  color: white;
+  padding: 60px 0 40px 0;
+}
+
+.footer__columns {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column_content_copyright {
+  justify-content: space-between;
+  flex-basis: 711px;
+}
+
+.footer__column-heading {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.footer__column-links {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 16px 0;
+}
+
+.footer__column-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+  color: white;
+}
+
+.footer__author {
+  padding: 18px 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
 }
