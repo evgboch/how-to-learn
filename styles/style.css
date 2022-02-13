@@ -1,12 +1,8 @@
 .page {
-  box-sizing: border-box;
   min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  min-height: 600px;
-  max-height: 756px;
-  height: 100vh;
 }
 
 .header {
@@ -67,6 +63,9 @@
 
 .logo {
   width: 183px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .logo_place_header {
@@ -75,17 +74,11 @@
   top: 30px;
   left: 64px;
   background-image: url(../images/logo_place_header.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .logo_place_footer {
   height: 35px;
   background-image: url(../images/logo_place_footer.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   z-index: 5;
 }
 
@@ -108,6 +101,7 @@
   color:#2f80ed;
   font-size: 18px;
   line-height: 1.2;
+  font-weight: normal;
 }
 
 .two-columns__main-text {
@@ -134,7 +128,6 @@
 }
 
 .digits {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -196,29 +189,23 @@
 }
 
 .table__heading {
-  margin: 0 0 20px;
+  margin: 0;
   font-size: 24px;
   font-weight: bold;
   line-height: 1.15;
 }
 
 .table__text {
-  margin: 0;
   font-size: 18px;
   line-height: 1.2;
-}
-
-.table-text__paragraph {
-  margin: 0 0 20px;
-}
-
-.table-text__paragraph:last-of-type {
-  margin-bottom: 0;
+  margin: 20px 0 0;
 }
 
 .feynman {
+  box-sizing: border-box;
   position: relative;
-  height: 890px;
+  /* изначально высота была задана через height в соответствии с брифом. по рекомендации ревьюера height изменил на min-height */
+  min-height: 890px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -285,6 +272,7 @@
 }
 
 .footer {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   min-height: 350px;
