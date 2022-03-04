@@ -1,0 +1,11 @@
+.feynman {
+  box-sizing: border-box;
+  position: relative;
+  /* изначально высота была задана через height в соответствии с брифом. по рекомендации ревьюера height изменил на min-height */
+  min-height: 890px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  background-color: #f2f2f2;
+}
